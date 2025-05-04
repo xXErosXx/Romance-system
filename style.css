@@ -94,17 +94,17 @@ a {
 
 /* 1st <p> = intro */
 #caedes-profile p:nth-of-type(1) {
-  color: #e0d4f7;
+  color: rgba(109, 44, 6, 0.61);
 }
 
 /* 2nd <p> = biography */
 #caedes-profile p:nth-of-type(2) {
-  color: #e0d4f7;
+  color: rgba(109, 44, 6, 0.61);
 }
 
 /* 3rd <p> = personality */
 #caedes-profile p:nth-of-type(3) {
-  color: #e0d4f7;
+  color: rgba(109, 44, 6, 0.61);
 }
 
 /* Add box around text in each section */
