@@ -1,14 +1,11 @@
-/* front-page.css */
-
-/* Example: Style for the header */
-header {
-  background-color: #ff6347;  /* A different color for the front page header */
-  color: white;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* Style for the intro section */
-.intro-section {
-  padding: 20px;
-  background-color: #f1f1f1;
-  color: #333;
+body {
+  font-family: sans-serif;
+  background: rgba(255, 255, 255, 1);
+  color: rgba(245, 232, 235, 0.6);
 }
