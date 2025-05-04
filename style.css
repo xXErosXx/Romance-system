@@ -79,17 +79,17 @@ a {
 
 .caedes-page header {
   background-color:rgba(138, 46, 49, 0.78);  /* pitch black */
-  color: #ccc;            /* light grey text */
+  color: rgba(77, 0, 0, 0.67);            /* light grey text */
   padding: 1rem;          /* optional: some space inside */
 }
 
 .caedes-page header a {
-  color: #ccc;            /* make links inside header same light grey */
+  color: rgba(77, 0, 0, 0.67);            /* make links inside header same light grey */
   text-decoration: none;   /* optional: remove underline */
 }
 
 .caedes-page header a:hover {
-  color: #fff;            /* optional: brighten links on hover */
+  color: rgba(77, 0, 0, 0.67);            /* optional: brighten links on hover */
 }
 
 /* 1st <p> = intro */
@@ -116,17 +116,6 @@ a {
 
 /* 3rd <p> = personality */
 #caedes-profile p:nth-of-type(3) {
-  color: rgba(109, 44, 6, 0.61);  /* Dark red color for text */
-  background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent white background */
-  border: 2px solid #8c6f99;  /* Purple border for the box */
-  padding: 15px;               /* Space inside the box */
-  border-radius: 8px;          /* Rounded corners */
-  margin-bottom: 20px;         /* Space below the box */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow effect */
-}
-
-/* 4th <p> = abilities */
-#caedes-profile p:nth-of-type(4) {
   color: rgba(109, 44, 6, 0.61);  /* Dark red color for text */
   background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent white background */
   border: 2px solid #8c6f99;  /* Purple border for the box */
