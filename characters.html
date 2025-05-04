@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Character List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>My OCs</h1>
+
+  <!-- Sort control -->
+  <section class="oc-sort">
+    <label for="sortOrder">Sort by:</label>
+    <select id="sortOrder">
+      <option value="alphabetical">A → Z</option>
+      <option value="reverse">Z → A</option>
+    </select>
+  </section>
+
+  <!-- OC list -->
+  <section class="oc-list">
+    <ul id="ocList">
+      <li><a href="Caedes.html">Caedes</a></li>
+      <li><a href="Buck.html">Buck</a></li>
+      <li><a href="Bucky.html">Bucky</a></li>
+      <li><a href="Ghost.html">Ghost</a></li>
+      <li><a href="Bruce.html">Bruce</a></li>
+      <li><a href="Venom.html">Venom</a></li>
+      <li><a href="XI.html">XI</a></li>
+      <li><a href="Bain.html">Bain</a></li>
+      <li><a href="Joseph.html">Joseph</a></li>
+    </ul>
+  </section>
+
+  <script>
+    const sortOrder = document.getElementById('sortOrder');
+    const ocList = document.getElementById('ocList');
+    sortOrder.addEventListener('change', () => {
+      const items = Array.from(ocList.querySelectorAll('li'));
+      items.sort((a, b) => {
+        let A = a.textContent.trim().toUpperCase();
+        let B = b.textContent.trim().toUpperCase();
+        return sortOrder.value === 'reverse'
+          ? B.localeCompare(A)
+          : A.localeCompare(B);
+      });
+      ocList.innerHTML = '';
+      items.forEach(li => ocList.appendChild(li));
+    });
+  </script>
+</body>
+</html>
