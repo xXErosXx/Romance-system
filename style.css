@@ -35,3 +35,13 @@ ul {
   list-style-type: square;
   margin-left: 20px;
 }
+@media (max-width: 600px) {
+  #caedes-profile {
+    margin: 10px;
+    max-width: 100%;
+  }
+
+  #caedes-profile img {
+    max-width: 100%;
+  }
+}
