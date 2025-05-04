@@ -90,7 +90,7 @@ a {
   color: rgba(77, 0, 0, 0.67);
 }
 
-/* --- Box styles for intro, biography, personality, and abilities --- */
+/* Global box styling for all sections */
 #caedes-profile .intro-box,
 #caedes-profile .biography-box,
 #caedes-profile .personality-box,
@@ -101,10 +101,10 @@ a {
   margin-bottom: 20px;         /* Space below the box */
   background-color: rgba(255, 255, 255, 0.7);  /* Slightly transparent white background */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Light shadow effect */
-  color: rgba(109, 44, 6, 0.61);  /* Apply text color to all content inside */
+  color: rgba(109, 44, 6, 0.61);  /* Dark red color for text */
 }
 
-/* --- Title styles for each section inside the boxes --- */
+/* Title styling for each section inside the boxes */
 #caedes-profile .intro-box h3,
 #caedes-profile .biography-box h3,
 #caedes-profile .personality-box h3,
@@ -116,15 +116,15 @@ a {
   padding: 5px 0;       /* Space above and below the title */
 }
 
-/* --- Styles for paragraphs inside the boxes --- */
+/* Paragraph styling inside the boxes */
 #caedes-profile .intro-box p,
 #caedes-profile .biography-box p,
 #caedes-profile .personality-box p,
 #caedes-profile .abilities-box p {
-  color: rgba(109, 44, 6, 0.61);  /* Apply dark red color for the text */
+  color: rgba(109, 44, 6, 0.61);  /* Dark red color for text */
 }
 
-/* --- Optional: Removing extra shadow from abilities text --- */
+/* Specific styling for abilities text */
 #caedes-profile .abilities,
 #caedes-profile .abilities-text {
   box-shadow: none;    /* No extra shadow inside the box */
