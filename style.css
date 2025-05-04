@@ -24,15 +24,10 @@ body {
   gap: 1rem;                 /* space between image and text */
 }
 
-
-/* no need for the >*:not(img) rule any more—remove it */
-
-}
-
 #caedes-profile img {
-  width: 100%;                   /* Make the image responsive */
+  width: auto;                   /* Keep the image from stretching */
   max-width: 200px;              /* Maximum width of image */
-  height: auto;                 /* Keeps the image aspect ratio */
+  height: auto;                 /* Maintain aspect ratio */
   display: block;                /* Center image */
   margin-bottom: 20px;           /* Space between image and text */
   border-radius: 15px;           /* Rounded corners */
