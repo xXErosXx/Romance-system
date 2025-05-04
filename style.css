@@ -45,3 +45,23 @@ ul {
     max-width: 100%;
   }
 }
+/* Caedes profile layout: image + text side by side */
+#caedes-profile {
+  display: flex;             /* make image and text sit in a row */
+  align-items: flex-start;   /* align image and top of text */
+  gap: 1rem;                 /* space between image and text */
+}
+
+/* Target the image: size, rounding, and margin */
+#caedes-profile img {
+  width: 200px;              /* make it smaller */
+  flex-shrink: 0;            /* don’t let it shrink further */
+  border-radius: 8px;        /* rounded corners */
+  object-fit: cover;         /* crop‑to‑fit if aspect ratio differs */
+}
+
+/* Ensure the text section takes remaining space */
+#caedes-profile > *:not(img) {
+  flex: 1;                   /* text grows to fill row */
+}
+
