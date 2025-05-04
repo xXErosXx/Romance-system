@@ -110,7 +110,8 @@ a {
 /* Add box around text in each section */
 #caedes-profile .intro,
 #caedes-profile .biography,
-#caedes-profile .personality {
+#caedes-profile .personality,
+#caedes-profile .abilities {
   border: 2px solid #8c6f99;  /* Purple border for the box */
   padding: 15px;               /* Space inside the box */
   border-radius: 8px;          /* Rounded corners */
@@ -121,6 +122,7 @@ a {
 /* Optional: Add a subtle shadow to make it pop */
 #caedes-profile .intro,
 #caedes-profile .biography,
-#caedes-profile .personality {
+#caedes-profile .personality,
+#caedes-profile .abilities {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow effect */
 }
