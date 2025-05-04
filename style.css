@@ -16,29 +16,28 @@ body {
   margin: 20px auto;
   max-width: 900px;
 
-  /* layout: stack vertically & center */
   display: flex;
-  flex-direction: column;    /* image above text */
-  align-items: center;       /* center horizontally */
-  text-align: center;        /* center lines of text */
-  gap: 1rem;                 /* space between image and text */
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
 }
 
 #caedes-profile img {
-  width: auto;                   /* Keep the image from stretching */
-  max-width: 200px;              /* Maximum width of image */
-  height: auto;                 /* Maintain aspect ratio */
-  display: block;                /* Center image */
-  margin-bottom: 20px;           /* Space between image and text */
-  border-radius: 15px;           /* Rounded corners */
+  width: auto;
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 15px;
 }
 
 h1, h2 {
-  color: #2c3e50;                /* Dark blue-gray for titles */
+  color: #2c3e50;
 }
 
 h3 {
-  color: #34495e;                /* Slightly lighter gray for subheadings */
+  color: #34495e;
 }
 
 ul {
@@ -49,17 +48,16 @@ ul {
 .caedes-page {
   background: url('https://i.imgur.com/0n5RatC.jpeg') no-repeat center center fixed;
   background-size: cover;
-  color: #000; /* Black text for contrast */
+  color: #000;
 }
 
 #caedes-profile {
-  background-color: rgba(138, 46, 49, 0.78); /* Semi-transparent white */
+  background-color: rgba(138, 46, 49, 0.78);
   padding: 2rem;
   border-radius: 10px;
   max-width: 900px;
   margin: 2rem auto;
 }
-
 
 @media (max-width: 600px) {
   #caedes-profile {
@@ -68,82 +66,31 @@ ul {
   }
 
   #caedes-profile img {
-    max-width: 100%;             /* Image becomes full-width on small screens */
+    max-width: 100%;
   }
 }
 
 a {
-  color: #ffcccc;  /* soft pink for contrast; change to your preferred color */
-  text-decoration: underline;  /* optional: keeps the underline */
+  color: #ffcccc;
+  text-decoration: underline;
 }
 
 .caedes-page header {
-  background-color:rgba(138, 46, 49, 0.78);  /* pitch black */
-  color: rgba(77, 0, 0, 0.67);            /* light grey text */
-  padding: 1rem;          /* optional: some space inside */
+  background-color: rgba(138, 46, 49, 0.78);
+  color: rgba(77, 0, 0, 0.67);
+  padding: 1rem;
 }
 
 .caedes-page header a {
-  color: rgba(77, 0, 0, 0.67);            /* make links inside header same light grey */
-  text-decoration: none;   /* optional: remove underline */
+  color: rgba(77, 0, 0, 0.67);
+  text-decoration: none;
 }
 
 .caedes-page header a:hover {
-  color: rgba(77, 0, 0, 0.67);            /* optional: brighten links on hover */
+  color: rgba(77, 0, 0, 0.67);
 }
 
-/* 1st <p> = intro */
-#caedes-profile p:nth-of-type(1) {
-  color: rgba(109, 44, 6, 0.61);  /* Dark red color for text */
-  background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent white background */
-  border: 2px solid #8c6f99;  /* Purple border for the box */
-  padding: 15px;               /* Space inside the box */
-  border-radius: 8px;          /* Rounded corners */
-  margin-bottom: 20px;         /* Space below the box */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow effect */
-}
-
-/* 2nd <p> = biography */
-#caedes-profile p:nth-of-type(2) {
-  color: rgba(109, 44, 6, 0.61);  /* Dark red color for text */
-  background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent white background */
-  border: 2px solid #8c6f99;  /* Purple border for the box */
-  padding: 15px;               /* Space inside the box */
-  border-radius: 8px;          /* Rounded corners */
-  margin-bottom: 20px;         /* Space below the box */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow effect */
-}
-
-/* 3rd <p> = personality */
-#caedes-profile p:nth-of-type(3) {
-  color: rgba(109, 44, 6, 0.61);  /* Dark red color for text */
-  background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent white background */
-  border: 2px solid #8c6f99;  /* Purple border for the box */
-  padding: 15px;               /* Space inside the box */
-  border-radius: 8px;          /* Rounded corners */
-  margin-bottom: 20px;         /* Space below the box */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow effect */
-}
-
-/* Abilities List (ul) */
-#caedes-profile .abilities-box {
-  border: 2px solid #8c6f99;
-  padding: 15px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  background-color: rgba(255, 255, 255, 0.7);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  color: rgba(109, 44, 6, 0.61);  /* applies to ALL text inside */
-}
-
-
-/* text color inside the box */
-#caedes-profile .abilities-box p {
-  color: rgba(109, 44, 6, 0.61);
-}
-
-
-/* Box around all paragraphs */
+/* --- Box styles for intro, biography, personality, abilities --- */
 #caedes-profile .intro,
 #caedes-profile .biography,
 #caedes-profile .personality,
@@ -154,25 +101,12 @@ a {
   margin-bottom: 20px;
   background-color: rgba(255, 255, 255, 0.7);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: rgba(109, 44, 6, 0.61);  /* Apply text color to all content inside */
 }
 
-/* Optional: keep the text color inside */
-#caedes-profile .abilities-box p {
-  color: rgba(109, 44, 6, 0.61);
-}
-
-
-/* Optional: Add a subtle shadow to make it pop */
-#caedes-profile .intro,
-#caedes-profile .biography,
-#caedes-profile .personality,
+/* Optional: keep shadow on abilities text */
 #caedes-profile .abilities,
 #caedes-profile .abilities-text {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+  box-shadow: none;  /* No extra shadow inside the box */
+  color: inherit;    /* Use inherited color */
 }
-
-/* Styling the abilities text specifically */
-*#caedes-profile .abilities-text {
-  color: rgba(109, 44, 6, 0.61);  /* Dark red color for text */
-}
-
