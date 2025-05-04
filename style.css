@@ -47,9 +47,19 @@ ul {
 }
 
 .caedes-page {
-  background-color: #5b1a1a;     /* Desaturated wine red background */
-  color: #000;                   /* Black text for contrast */
+  background: url(https://i.imgur.com/qvZALFc.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  color: #000; /* Black text for contrast */
 }
+
+#caedes-profile {
+  background-color: rgba(133, 0, 4, 0.78); /* Semi-transparent white */
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
 
 @media (max-width: 600px) {
   #caedes-profile {
