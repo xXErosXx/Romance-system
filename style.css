@@ -15,10 +15,16 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 20px auto;
   max-width: 900px;
-  display: flex;                 /* Flexbox layout */
-  flex-direction: column;        /* Stack image and text vertically */
-  align-items: center;           /* Center everything */
-  text-align: center;            /* Ensure text is centered */
+ /* Caedes profile layout: stack vertically and center */
+#caedes-profile {
+  display: flex;              /* keep flex */
+  flex-direction: column;     /* stack image then text */
+  align-items: center;        /* center horizontally */
+  gap: 1rem;                  /* space between image and text */
+}
+
+/* no need for the >*:not(img) rule any more—remove it */
+
 }
 
 #caedes-profile img {
