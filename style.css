@@ -94,28 +94,59 @@ a {
 
 /* 1st <p> = intro */
 #caedes-profile p:nth-of-type(1) {
-  color: rgba(109, 44, 6, 0.61);
+  color: rgba(109, 44, 6, 0.61);  /* Dark red color for text */
+  background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent white background */
+  border: 2px solid #8c6f99;  /* Purple border for the box */
+  padding: 15px;               /* Space inside the box */
+  border-radius: 8px;          /* Rounded corners */
+  margin-bottom: 20px;         /* Space below the box */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow effect */
 }
 
 /* 2nd <p> = biography */
 #caedes-profile p:nth-of-type(2) {
-  color: rgba(109, 44, 6, 0.61);
+  color: rgba(109, 44, 6, 0.61);  /* Dark red color for text */
+  background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent white background */
+  border: 2px solid #8c6f99;  /* Purple border for the box */
+  padding: 15px;               /* Space inside the box */
+  border-radius: 8px;          /* Rounded corners */
+  margin-bottom: 20px;         /* Space below the box */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow effect */
 }
 
 /* 3rd <p> = personality */
 #caedes-profile p:nth-of-type(3) {
-  color: rgba(109, 44, 6, 0.61);
-}
-
-/* Add box around text in each section */
-#caedes-profile .intro,
-#caedes-profile .biography,
-#caedes-profile .personality,
-#caedes-profile .abilities {
+  color: rgba(109, 44, 6, 0.61);  /* Dark red color for text */
+  background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent white background */
   border: 2px solid #8c6f99;  /* Purple border for the box */
   padding: 15px;               /* Space inside the box */
   border-radius: 8px;          /* Rounded corners */
-  margin-bottom: 20px;         /* Space below each box */
+  margin-bottom: 20px;         /* Space below the box */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+}
+
+/* 4th <p> = abilities (if necessary) */
+#caedes-profile p:nth-of-type(4) {
+  color: rgba(109, 44, 6, 0.61);  /* Dark red color for text */
+  background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent white background */
+  border: 2px solid #8c6f99;  /* Purple border for the box */
+  padding: 15px;               /* Space inside the box */
+  border-radius: 8px;          /* Rounded corners */
+  margin-bottom: 20px;         /* Space below the box */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+}
+
+
+/* Box around intro paragraph */
+#caedes-profile .intro,
+#caedes-profile .biography,
+#caedes-profile .personality,
+#caedes-profile .abilities,
+#caedes-profile .abilities-list { /* Add .abilities-list here too */
+  border: 2px solid #8c6f99;  /* Purple border for the box */
+  padding: 15px;               /* Space inside the box */
+  border-radius: 8px;          /* Rounded corners */
+  margin-bottom: 20px;         /* Space below the box */
   background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent white background */
 }
 
@@ -123,6 +154,7 @@ a {
 #caedes-profile .intro,
 #caedes-profile .biography,
 #caedes-profile .personality,
-#caedes-profile .abilities {
+#caedes-profile .abilities,
+#caedes-profile .abilities-list {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow effect */
 }
