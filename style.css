@@ -156,14 +156,20 @@ a {
 #caedes-profile .intro,
 #caedes-profile .biography,
 #caedes-profile .personality,
-#caedes-profile .abilities,
-#caedes-profile .abilities-text { 
-  border: 2px solid #8c6f99;  /* Purple border for the box */
-  padding: 15px;               /* Space inside the box */
-  border-radius: 8px;          /* Rounded corners */
-  margin-bottom: 20px;         /* Space below the box */
-  background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent white background */
+#caedes-profile .abilities-box {
+  border: 2px solid #8c6f99;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+/* Optional: keep the text color inside */
+#caedes-profile .abilities-box p {
+  color: rgba(109, 44, 6, 0.61);
+}
+
 
 /* Optional: Add a subtle shadow to make it pop */
 #caedes-profile .intro,
