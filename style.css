@@ -31,7 +31,8 @@ body {
 
 #caedes-profile img {
   width: 100%;                   /* Make the image responsive */
-  max-width: 400px;              /* Maximum width of image */
+  max-width: 200px;              /* Maximum width of image */
+  height: auto;                 /* Keeps the image aspect ratio */
   display: block;                /* Center image */
   margin-bottom: 20px;           /* Space between image and text */
   border-radius: 15px;           /* Rounded corners */
