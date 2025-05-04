@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: sans-serif;
   background: rgba(255, 255, 255, 1);
@@ -14,27 +15,38 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 20px auto;
   max-width: 900px;
+  display: flex;                 /* Flexbox layout */
+  flex-direction: column;        /* Stack image and text vertically */
+  align-items: center;           /* Center everything */
+  text-align: center;            /* Ensure text is centered */
 }
 
 #caedes-profile img {
-  width: 100%; /* Makes the image responsive */
-  max-width: 400px;
-  display: block;
-  margin: 20px auto;
+  width: 100%;                   /* Make the image responsive */
+  max-width: 400px;              /* Maximum width of image */
+  display: block;                /* Center image */
+  margin-bottom: 20px;           /* Space between image and text */
+  border-radius: 15px;           /* Rounded corners */
 }
 
 h1, h2 {
-  color: #2c3e50; /* Dark blue-gray for titles */
+  color: #2c3e50;                /* Dark blue-gray for titles */
 }
 
 h3 {
-  color: #34495e; /* Slightly lighter gray for subheadings */
+  color: #34495e;                /* Slightly lighter gray for subheadings */
 }
 
 ul {
   list-style-type: square;
   margin-left: 20px;
 }
+
+.caedes-page {
+  background-color: #5b1a1a;     /* Desaturated wine red background */
+  color: #000;                   /* Black text for contrast */
+}
+
 @media (max-width: 600px) {
   #caedes-profile {
     margin: 10px;
@@ -42,31 +54,7 @@ ul {
   }
 
   #caedes-profile img {
-    max-width: 100%;
+    max-width: 100%;             /* Image becomes full-width on small screens */
   }
-}
-/* Caedes profile layout: image + text side by side */
-#caedes-profile {
-  display: flex;             /* make image and text sit in a row */
-  align-items: flex-start;   /* align image and top of text */
-  gap: 1rem;                 /* space between image and text */
-}
-
-/* Target the image: size, rounding, and margin */
-#caedes-profile img {
-  width: 200px;              /* make it smaller */
-  flex-shrink: 0;            /* don’t let it shrink further */
-  border-radius: 8px;        /* rounded corners */
-  object-fit: cover;         /* crop‑to‑fit if aspect ratio differs */
-}
-
-/* Ensure the text section takes remaining space */
-#caedes-profile > *:not(img) {
-  flex: 1;                   /* text grows to fill row */
-}
-
-.caedes-page {
-  background-color: #5b1a1a;  /* desaturated wine red */
-  color: #000;                /* black text for contrast */
 }
 
