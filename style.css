@@ -65,3 +65,8 @@ ul {
   flex: 1;                   /* text grows to fill row */
 }
 
+.caedes-page {
+  background-color: #5b1a1a;  /* desaturated wine red */
+  color: #000;                /* black text for contrast */
+}
+
