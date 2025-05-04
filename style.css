@@ -1,35 +1,37 @@
-/* style.css */
-
-/* Page background and default text */
-body {
-  background-color: #f5f5f5;   /* light gray */
-  color: #333;                 /* dark gray text */
-  font-family: sans-serif;
+* {
+  box-sizing: border-box;
   margin: 0;
-  padding: 2rem;
-  text-align: center;
-}
-
-/* Heading style */
-h1 {
-  color: #5e2a84;              /* purple */
-  margin-bottom: 1rem;
-}
-
-/* List of characters */
-ul {
-  list-style: none;            /* remove bullets */
   padding: 0;
 }
-ul li {
-  margin: 0.5rem 0;
+body {
+  font-family: sans-serif;
+  background: rgba(255, 255, 255, 1);
+  color: #333333;
 }
-ul li a {
-  color: #6c4f97;              /* link color */
-  text-decoration: none;
-  font-size: 1.2rem;
-  transition: color 0.2s;
+
+/* Caedes' profile styles */
+#caedes-profile {
+  font-family: 'Arial', sans-serif;
+  margin: 20px auto;
+  max-width: 900px;
 }
-ul li a:hover {
-  color: #9b3b5f;              /* darker on hover */
+
+#caedes-profile img {
+  width: 100%; /* Makes the image responsive */
+  max-width: 400px;
+  display: block;
+  margin: 20px auto;
+}
+
+h1, h2 {
+  color: #2c3e50; /* Dark blue-gray for titles */
+}
+
+h3 {
+  color: #34495e; /* Slightly lighter gray for subheadings */
+}
+
+ul {
+  list-style-type: square;
+  margin-left: 20px;
 }
