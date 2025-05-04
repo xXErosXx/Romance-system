@@ -92,6 +92,21 @@ a {
   color: #fff;            /* optional: brighten links on hover */
 }
 
+/* 1st <p> = intro */
+#caedes-profile p:nth-of-type(1) {
+  color: #e0d4f7;
+}
+
+/* 2nd <p> = biography */
+#caedes-profile p:nth-of-type(2) {
+  color: #e0d4f7;
+}
+
+/* 3rd <p> = personality */
+#caedes-profile p:nth-of-type(3) {
+  color: #e0d4f7;
+}
+
 /* Add box around text in each section */
 #caedes-profile .intro,
 #caedes-profile .biography,
