@@ -92,17 +92,20 @@ a {
   color: #fff;            /* optional: brighten links on hover */
 }
 
-/* Intro text */
-#caedes-profile .intro {
-  color: #e0d4f7;   /* light lavender */
-}
-
-/* Biography text */
-#caedes-profile .biography {
-  color: #a48fbf;   /* muted purple */
-}
-
-/* Personality text */
+/* Add box around text in each section */
+#caedes-profile .intro,
+#caedes-profile .biography,
 #caedes-profile .personality {
-  color: #8c6f99;   /* darker dusky purple */
+  border: 2px solid #8c6f99;  /* Purple border for the box */
+  padding: 15px;               /* Space inside the box */
+  border-radius: 8px;          /* Rounded corners */
+  margin-bottom: 20px;         /* Space below each box */
+  background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent white background */
+}
+
+/* Optional: Add a subtle shadow to make it pop */
+#caedes-profile .intro,
+#caedes-profile .biography,
+#caedes-profile .personality {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow effect */
 }
