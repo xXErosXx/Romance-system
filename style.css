@@ -62,3 +62,7 @@ ul {
   }
 }
 
+a {
+  color: #ffcccc;  /* soft pink for contrast; change to your preferred color */
+  text-decoration: underline;  /* optional: keeps the underline */
+}
