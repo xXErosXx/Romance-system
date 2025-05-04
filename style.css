@@ -1,32 +1,112 @@
-/* Box around intro paragraph */
-#caedes-profile .intro-box, 
-#caedes-profile .biography-box, 
-#caedes-profile .personality-box, 
-#caedes-profile .abilities-box {
-  border: 2px solid #8c6f99;  /* Purple border for the box */
-  padding: 15px;               /* Space inside the box */
-  border-radius: 8px;          /* Rounded corners */
-  margin-bottom: 20px;         /* Space below the box */
-  background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent white background */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* Optional: Add a subtle shadow to make it pop */
-#caedes-profile .intro-box,
-#caedes-profile .biography-box,
-#caedes-profile .personality-box,
-#caedes-profile .abilities-box {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+body {
+  font-family: sans-serif;
+  background: rgba(255, 255, 255, 1);
+  color: rgba(245, 232, 235, 0.6);
 }
 
-/* Style the <h3> inside boxes */
-#caedes-profile .intro-box h3,
-#caedes-profile .biography-box h3,
-#caedes-profile .personality-box h3,
-#caedes-profile .abilities-box h3 {
-  color: rgba(109, 44, 6, 0.61);  /* Dark red color for text */
-  font-size: 1.5rem;              /* Adjust the title size */
-  font-weight: bold;              /* Bold title */
-  margin-bottom: 10px;            /* Space below the title */
-  padding: 5px 0;                 /* Padding around the title */
+/* Caedes' profile styles */
+#caedes-profile {
+  font-family: 'Arial', sans-serif;
+  margin: 20px auto;
+  max-width: 900px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+#caedes-profile img {
+  width: auto;
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+h1, h2 {
+  color: #2c3e50;
+}
+
+h3 {
+  color: #34495e;
+}
+
+ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+.caedes-page {
+  background: url('https://i.imgur.com/0n5RatC.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  color: #000;
+}
+
+#caedes-profile {
+  background-color: rgba(138, 46, 49, 0.78);
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+@media (max-width: 600px) {
+  #caedes-profile {
+    margin: 10px;
+    max-width: 100%;
+  }
+
+  #caedes-profile img {
+    max-width: 100%;
+  }
+}
+
+a {
+  color: #ffcccc;
+  text-decoration: underline;
+}
+
+.caedes-page header {
+  background-color: rgba(138, 46, 49, 0.78);
+  color: rgba(77, 0, 0, 0.67);
+  padding: 1rem;
+}
+
+.caedes-page header a {
+  color: rgba(77, 0, 0, 0.67);
+  text-decoration: none;
+}
+
+.caedes-page header a:hover {
+  color: rgba(77, 0, 0, 0.67);
+}
+
+/* --- Box styles for intro, biography, personality, abilities --- */
+#caedes-profile .intro,
+#caedes-profile .biography,
+#caedes-profile .personality,
+#caedes-profile .abilities-box {
+  border: 2px solid #8c6f99;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: rgba(109, 44, 6, 0.61);  /* Apply text color to all content inside */
+}
+
+/* Optional: keep shadow on abilities text */
+#caedes-profile .abilities,
+#caedes-profile .abilities-text {
+  box-shadow: none;  /* No extra shadow inside the box */
+  color: inherit;    /* Use inherited color */
 }
