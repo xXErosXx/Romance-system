@@ -66,3 +66,19 @@ a {
   color: #ffcccc;  /* soft pink for contrast; change to your preferred color */
   text-decoration: underline;  /* optional: keeps the underline */
 }
+
+.caedes-page header {
+  background-color: #000;  /* pitch black */
+  color: #ccc;            /* light grey text */
+  padding: 1rem;          /* optional: some space inside */
+}
+
+.caedes-page header a {
+  color: #ccc;            /* make links inside header same light grey */
+  text-decoration: none;   /* optional: remove underline */
+}
+
+.caedes-page header a:hover {
+  color: #fff;            /* optional: brighten links on hover */
+}
+
