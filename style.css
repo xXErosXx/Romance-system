@@ -92,3 +92,17 @@ a {
   color: #fff;            /* optional: brighten links on hover */
 }
 
+/* Intro text */
+#caedes-profile .intro {
+  color: #e0d4f7;   /* light lavender */
+}
+
+/* Biography text */
+#caedes-profile .biography {
+  color: #a48fbf;   /* muted purple */
+}
+
+/* Personality text */
+#caedes-profile .personality {
+  color: #8c6f99;   /* darker dusky purple */
+}
