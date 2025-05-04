@@ -2,9 +2,7 @@
 A website for easy learning about the Romance system
 
 ## Instructions for how to make a new character page:
-> Replace {{CharacterName}} with the name of the character. Replace {{CharacterImageURL}} with the image URL for that character (e.g., https://example.com/character.png). Replace {{CharacterIntro}}, {{CharacterBiography}}, and {{CharacterPersonality}} with the respective text for the character.
-
-Replace {{Ability1}}, {{Ability2}}, etc., with the specific abilities for that character.
+> Replace {{CharacterName}} with the name of the character. Replace {{CharacterImageURL}} with the image URL for that character (e.g., https://example.com/character.png). Replace {{CharacterIntro}}, {{CharacterBiography}}, and {{CharacterPersonality}} with the respective text for the character. Replace {{Ability1}}, {{Ability2}}, etc., with the specific abilities for that character.
 <!DOCTYPE html>
 <html lang="en">
 <head>
