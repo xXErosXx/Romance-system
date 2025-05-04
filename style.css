@@ -137,22 +137,19 @@ a {
 }
 
 /* Abilities List (ul) */
-#caedes-profile ul.abilities {
-  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
-  border: 2px solid #8c6f99;                   /* Border color */
-  border-radius: 8px;                           /* Rounded corners */
-  padding: 10px 15px;                           /* Padding inside the box */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);    /* Shadow effect */
-  margin-bottom: 20px;                          /* Space below */
+#caedes-profile .abilities-box {
+  border: 2px solid #8c6f99;  /* Purple border for the box */
+  padding: 15px;               /* Space inside the box */
+  border-radius: 8px;           /* Rounded corners */
+  margin-bottom: 20px;          /* Space below the box */
+  background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent white background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow effect */
 }
 
-/* Style the list items (li) inside the abilities list */
-#caedes-profile ul.abilities li {
-  color: rgba(109, 44, 6, 0.61);               /* Set text color to match other paragraphs */
-  margin-bottom: 5px;                           /* Add space between list items */
+/* text color inside the box */
+#caedes-profile .abilities-box p {
+  color: rgba(109, 44, 6, 0.61);
 }
-
-
 
 
 /* Box around all paragraphs */
@@ -178,7 +175,7 @@ a {
 }
 
 /* Styling the abilities text specifically */
-/*#caedes-profile .abilities-text {
+*#caedes-profile .abilities-text {
   color: rgba(109, 44, 6, 0.61);  /* Dark red color for text */
 }
 
