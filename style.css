@@ -155,12 +155,12 @@ a {
 
 
 
-/* Box around intro paragraph */
+/* Box around all paragraphs */
 #caedes-profile .intro,
 #caedes-profile .biography,
 #caedes-profile .personality,
 #caedes-profile .abilities,
-#caedes-profile .abilities-list { /* Add .abilities-list here too */
+#caedes-profile .abilities-text { 
   border: 2px solid #8c6f99;  /* Purple border for the box */
   padding: 15px;               /* Space inside the box */
   border-radius: 8px;          /* Rounded corners */
@@ -173,6 +173,12 @@ a {
 #caedes-profile .biography,
 #caedes-profile .personality,
 #caedes-profile .abilities,
-#caedes-profile .abilities-list {
+#caedes-profile .abilities-text {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow effect */
 }
+
+/* Styling the abilities text specifically */
+#caedes-profile .abilities-text {
+  color: rgba(109, 44, 6, 0.61);  /* Dark red color for text */
+}
+
